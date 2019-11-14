@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SEKKAT.ORM;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -15,9 +16,11 @@ namespace ChatonsCodeFirst.ORM
 
         }
 
-        //public DbSet<Categorie> Categories { get; set; }
-        //public DbSet<Chaton> Chatons { get; set; }
-        //public DbSet<Proprietaire> Proprietaires { get; set; }
+        public DbSet<jeux> jeu { get; set; }
+        public DbSet<Réservation> réservations { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
+
+        public DbSet<Client> Clients { get; set; }
     }
 }
 

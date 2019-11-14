@@ -52,12 +52,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="ContextBDD.cs" />
+    <Compile Include="jeux.cs" />
+    <Compile Include="Migrations\201911141520386_RayanDB.cs" />
+    <Compile Include="Migrations\201911141520386_RayanDB.designer.cs">
+      <DependentUpon>201911141520386_RayanDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Réservation.cs" />
+    <Compile Include="Stock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911141520386_RayanDB.resx">
+      <DependentUpon>201911141520386_RayanDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
